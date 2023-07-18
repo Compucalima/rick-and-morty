@@ -234,10 +234,19 @@ body {
 
 	.resident__more {
 		height: 190px;
+		
+	  }
+
+	  .small__text {
+		padding-left: 14px;
+	  }
+	  .more__items {
+		padding-left: 14px;
 	  }
 
 	.buttons__paginate {
-		display: none;		
+		display: none;	
 	}
+
 }
 
