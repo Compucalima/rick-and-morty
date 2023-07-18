@@ -55,7 +55,7 @@ const RickMorti = () => {
                 propsLocation = {locationsRYM}
             />
             <div className="buttons__pages">
-                <div className="prev__next">
+                <div className="prev__next__top">
                     <button
                     className="buttons" 
                     onClick={() => setCurrentPage(currentPage -1)}
@@ -86,7 +86,7 @@ const RickMorti = () => {
                 </div>
             </div>
             <div className="buttons__pages">
-                <div className="prev__next">
+                <div className="prev__next__botton">
                     <button
                     className="buttons" 
                     onClick={() => setCurrentPage(currentPage -1)}
