@@ -1,7 +1,7 @@
 import axios from "axios"
 import { useEffect, useState } from "react"
 const ResidentInfo = ({url}) => {
-    let statusUrl = "./src/assets/img/"
+    let statusUrl = "/img/"
     let statusIMG = ["unknown.png", "alive.png", "dead.png"]
     const [resident, setResident]=useState({})
     useEffect(() => {

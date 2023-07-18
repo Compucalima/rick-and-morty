@@ -21,7 +21,7 @@ body {
 		display: flex;
 		flex-direction: column;
 		text-align: center;
-		padding-top: 10px;
+		padding-top: 20px;
 		width: 230px;
 		height: 350px;
 		gap: 5px
@@ -43,6 +43,11 @@ body {
 		display: flex;
 		flex-direction: column;
 	}
+
+	.resident__more {
+		height: 190px;
+	  }
+
 	.buttons__paginate {
 		display: none;		
 	}
