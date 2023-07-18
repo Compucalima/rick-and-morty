@@ -69,7 +69,7 @@ const RickMorti = () => {
                         >
                             Anterior
                         </button>
-                        <label className="label__pages" >Página: {currentPage} de:{totalPages}</label> 
+                        <label className="label__pages" >Página: {currentPage} de {totalPages}</label> 
                         <button
                         className="buttons"
                         onClick={() => setCurrentPage(currentPage +1)}
@@ -100,12 +100,7 @@ const RickMorti = () => {
                         >
                                 Anterior
                         </button>
-
-                        {pagesToButtons.map((num) => ( 
-                            <button className="buttons__paginate" key={num} onClick={() => setCurrentPage(num)}>
-                                {num}
-                            </button>                       
-                        ))}
+                        <label className="label__pages" >Página: {currentPage} de {totalPages}</label> 
                         <button 
                             className="buttons"
                             onClick={() => setCurrentPage(currentPage +1)}
@@ -115,7 +110,15 @@ const RickMorti = () => {
                         </button>
                     </div>
                 </div>
-
+                <div className="full__pagination">
+                    {
+                        pagesToButtons.map((num) => ( 
+                            <button className="buttons__paginate" key={num} onClick={() => setCurrentPage(num)}>
+                                {num}
+                            </button>                       
+                        ))
+                    }
+                </div>
             </div>
         </section>
     )

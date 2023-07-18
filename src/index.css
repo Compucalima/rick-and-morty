@@ -226,12 +226,10 @@ body {
 	.prev__next__botton {
 		padding-top: 20px;
 		padding-bottom: 20px;
-		width: 230px;
+		width: 80%;
 		height: 50px;
 		display: flex;
 	}
-
-
 	.resident__more {
 		height: 190px;
 		
@@ -243,9 +241,16 @@ body {
 	  .more__items {
 		padding-left: 14px;
 	  }
+	  .full__pagination {
+		display: flex;
+		flex-wrap: wrap;
+		padding: 10px 10px;
+		gap: 8px;
+		top: 30px;
+	  }
 
 	.buttons__paginate {
-		display: none;	
+
 	}
 
 }
