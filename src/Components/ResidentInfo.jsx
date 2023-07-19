@@ -12,26 +12,37 @@ const ResidentInfo = ({url}) => {
     },[])
     let urlFullStatus
     let traslateStatus
+    let imageGray
+    let colorStatus
     const statusCharacter = () =>{
         if(resident.status === "unknown"){
                 urlFullStatus =  statusUrl + statusIMG[0],
                 traslateStatus = "Desconocido"
+                imageGray = "hue-rotate(90deg)"
+                colorStatus = "#aeaeae"
+
         } else if (resident.status ==="Alive"){
                 urlFullStatus = statusUrl + statusIMG[1]
                 traslateStatus = "Aún Vive"
+                imageGray = "saturate(3)"
+                colorStatus = "#f6ff00"
         } else {
                 urlFullStatus= statusUrl + statusIMG[2]
-                traslateStatus = "Ha muerto"    
+                traslateStatus = "Ha muerto" 
+                imageGray = "grayscale(100%)" 
+                colorStatus = "#800f0f"  
         }
-        return urlFullStatus, traslateStatus
+        return urlFullStatus, traslateStatus, imageGray
     }
     statusCharacter()
     return(
         <div className="resident__info">
             <div className="resident__card">
             <h3 className="resident__name">{resident.name}</h3>
-                <img src={resident.image} alt={resident.name} className="resident__img" />
-                <div className="resident__status" style={{color: resident.status === "Alive" ? "#f6ff00" : "#800f0f"}}>
+                
+                <img src={resident.image} alt={resident.name} className="resident__img" style={{filter: imageGray}} />
+
+                <div className="resident__status" style={{color: colorStatus }}>
                     <p>Estado: {traslateStatus}</p>                
                 </div>
                 <img src={urlFullStatus} alt={resident.status} className="status__img"/>                       
