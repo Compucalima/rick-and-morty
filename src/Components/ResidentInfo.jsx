@@ -18,7 +18,7 @@ const ResidentInfo = ({url}) => {
         if(resident.status === "unknown"){
                 urlFullStatus =  statusUrl + statusIMG[0],
                 traslateStatus = "Desconocido"
-                imageGray = "hue-rotate(90deg)"
+                imageGray = "sepia(100%)"
                 colorStatus = "#aeaeae"
 
         } else if (resident.status ==="Alive"){

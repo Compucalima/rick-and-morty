@@ -231,26 +231,20 @@ body {
 		display: flex;
 	}
 	.resident__more {
-		height: 190px;
-		
-	  }
-
-	  .small__text {
+		height: 190px;	
+	}
+	.small__text {
 		padding-left: 14px;
-	  }
-	  .more__items {
+	}
+	.more__items {
 		padding-left: 14px;
-	  }
-	  .full__pagination {
+	}
+	.full__pagination {
 		display: flex;
 		flex-wrap: wrap;
 		padding: 10px 10px;
 		gap: 8px;
 		top: 30px;
-	  }
-
-	.buttons__paginate {
-
 	}
 
 }
