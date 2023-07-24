@@ -48,7 +48,7 @@ const RickMorti = () => {
                 <form className="search__locations" onSubmit={(e) => searchById(e)}>
                     <input 
                         className="search__input"
-                        placeholder={`Ingresa un Id entre 1 y ${allLocations.info?.count}`} 
+                        placeholder={`Ingresa un ID entre 1 y ${allLocations.info?.count}`} 
                         type="text" 
                         value={searchLocations} 
                         onChange={(e) => setSearchLocations(e.target.value)} 

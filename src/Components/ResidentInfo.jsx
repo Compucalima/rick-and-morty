@@ -51,7 +51,7 @@ const ResidentInfo = ({url}) => {
                     <p className="more__items">{resident.species}</p>
                     <p className="small__text">ORIGEN:</p>
                     <p className="more__items">{resident.origin?.name}</p>
-                    <p className="small__text">APARICIÓN EN EPISONDIOS</p>
+                    <p className="small__text">APARICIÓN EN EPISODIOS</p>
                     <p className="more__items">{resident.episode?.length}</p>
                 </div>
             </div>
